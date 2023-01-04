@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;  
+*/
+
+:root{  /*variaves em css */
+    --cor-primaria:#4209FF;
+    --white:#ffff;
+    --gap:3rem;  /*tirar o texto de ficar colado na borda, foi usando la na classe prime content*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    font-size: 62.5%;  /* vai deixar como se tivesse 16px html*/
+}
+
+
+body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 2rem;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 4rem; 
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 3.6rem; 
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 3.4rem; 
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h6{
+    font-size: 2.8rem; 
+    text-transform: uppercase;
+}
+
+.background-principal{
+    background-image: url('../images/liquid-cheese.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color:var(--white) ;
+}
+
+.background-white{
+    background: var(--white);
+}
+
+.prime-content{
+    max-width: 1200px;
+    margin: 0;
+    padding: var(--gap);
+}
+
+.section-site{
+    min-height: 100vh;  /*view height */
+}
