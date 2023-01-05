@@ -1,0 +1,22 @@
+
+.background-principal{
+    background-image: url('../images/liquid-cheese.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+   
+}
+
+.background-white{
+    background: var(--white);
+}
+
+.prime-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.section-site{
+    min-height: 100vh;  /*view height */
+}

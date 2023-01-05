@@ -1,0 +1,6 @@
+:root{  /*variaves em css */
+    --cor-primaria:#4209FF;
+    --gray-menu-border-menu: #EEEE;
+    --white:#ffff;
+    --gap:1rem;  /*tirar o texto de ficar colado na borda, foi usando la no menu*/
+}
