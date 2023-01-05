@@ -8,7 +8,7 @@ font-family: 'Open Sans', sans-serif;
 :root{  /*variaves em css */
     --cor-primaria:#4209FF;
     --white:#ffff;
-    --gap:3rem;  /*tirar o texto de ficar colado na borda, foi usando la na classe prime content*/
+    --gap:3rem;  /*tirar o texto de ficar colado na borda, foi usando la no*/
 }
 
 *{
@@ -25,7 +25,7 @@ html{
 body{
     font-family:'Open Sans', sans-serif;
     font-size: 2rem;
-    
+    color: var(--cor-primaria);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -67,7 +67,7 @@ h6{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    color:var(--white) ;
+   
 }
 
 .background-white{
@@ -82,4 +82,22 @@ h6{
 
 .section-site{
     min-height: 100vh;  /*view height */
+}
+
+.menu{
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
 }
