@@ -4,11 +4,12 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-   
+    color: var(--white);
 }
 
 .background-white{
     background: var(--white);
+    color: var(--cor-primaria);
 }
 
 .prime-content{
@@ -19,4 +20,8 @@
 
 .section-site{
     min-height: 100vh;  /*view height */
+}
+
+.menu-space{
+    height: 64px;
 }

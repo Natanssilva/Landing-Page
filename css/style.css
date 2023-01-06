@@ -5,3 +5,37 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;  
 */
 
+.intro-content{  /*Uso de display Grid mas poderia ser usado o FLEX */
+    position: relative;
+    top: -6.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* deixando o GRID do texto menor que a imagem */
+    align-items: stretch;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+/*  Dentro de uma coluna da grid, colocando um FLEX  */
+
+.introduction-text-content, .introduction-image{ 
+    display: flex;
+    flex-direction: column; /* ou flex-flow:column-wrap  */
+    justify-content: center;
+    
+}
+
+
+.introduction-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.mid-content{
+    max-width: 64rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
