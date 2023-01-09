@@ -12,7 +12,7 @@ font-family: 'Open Sans', sans-serif;
     grid-template-columns: 1fr 2fr; /* deixando o GRID do texto menor que a imagem */
     align-items: stretch;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*  Dentro de uma coluna da grid, colocando um FLEX  */
@@ -28,6 +28,7 @@ font-family: 'Open Sans', sans-serif;
 .introduction-image img{
     max-width: 100%;
     height: auto;
+    height: 100vh;
 }
 
 .mid-content{
@@ -39,3 +40,32 @@ font-family: 'Open Sans', sans-serif;
     height: 100vh;
     text-align: center;
 }
+
+.grid-one-content{
+   
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center; 
+    min-height: 100vh;
+}
+.grid-main-head{
+    
+    margin-bottom: 3rem;
+}
+
+.grid-description{
+    padding-bottom: 6rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap);
+    
+}
+
+.grid h3{
+    font-size: 3rem;
+}
+
