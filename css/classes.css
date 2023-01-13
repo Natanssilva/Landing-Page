@@ -25,3 +25,8 @@
 .menu-space{
     height: 64px;
 }
+
+body .complete-width{ /* apenas para sobreescrever, especifidade baixa */
+    width: 100%;
+    flex: 1 1 100%;
+}
