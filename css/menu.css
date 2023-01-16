@@ -9,6 +9,11 @@
     z-index: 1;
    
 }
+
+#industry{
+    color: var(--cor-primaria);
+}
+
 .menu-content{
     display: flex;
     justify-content: space-between;
@@ -60,3 +65,4 @@
     color: var(--cor-primaria);
   
 }
+

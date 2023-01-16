@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body class="background-principal">
+<body >
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button"> <!-- para saber que é um bttn -->
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu background-white">
         <div class="prime-content menu-content">
-            <h1>
-                INDUSTRY
-            </h1>
+            <h1><a id="industry" href="#intro">Industry</a></h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#mid">top 3</a></li>
                     <li><a href="#grid-one">grid</a></li>
@@ -28,11 +29,12 @@
                     <li><a href="#social-medias">social medias</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
+               
             </nav>
         </div>
     </aside>
 
-    <div class="menu-space"></div>
+    <div></div>
 
     <section id="intro" class=" background-principal section-site">
         <div class="prime-content intro-content">
@@ -124,7 +126,7 @@
 
     <section id="grid-one" class="grid-one background-white section-site">
         <div class=" prime-content grid-one-content">
-            <h2 class="grid-main-head">gallery situation</h2>
+            <h2 class="grid-main-head">gallery </h2>
             <p class="grid-description">About our gallery:</p>
             <div class="grid">
                 <article>
@@ -156,24 +158,13 @@
             <div class="content-contact">
                     <div class="conteudo">
                         <h3><a href="https://www.linkedin.com/in/natan-porto-machado-da-silva-b1b817244/" rel="next" target="_blank">LinkedIn</a></h3>
-                    
-                        
+    
                     </div>
-                    
-                    
-              
                 <!-- Segundo link -->
                     
                 <div class="conteudo">
                     <h3><a href="#" rel="next" target="_blank">Instagram</a></h3>
-                
-                    
                 </div>
-                
-                   
-                    
-                
-               
             </div>
         </div>
 
@@ -228,6 +219,9 @@
         </div>
     </section>
     <footer id="main-footer"><p>Desenvolvido by <a href="https://github.com/Natanssilva" rel="next" target="_blank">Natan Silva</a></p>
-        <p>seguindo projeto e aulas de Otávio Miranda</p></footer>
+        <p>seguindo projeto e aulas de Otávio Miranda</p>
+    </footer>
+
+    <a class="back-to-home" href="#"><img src="images/arrow-back-to-home.svg" alt=""></a>
 </body>
 </html>

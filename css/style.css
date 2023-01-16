@@ -28,8 +28,8 @@ font-family: 'Open Sans', sans-serif;
 
 .introduction-image img{
     max-width: 100%;
-    height: auto;
     height: 100vh;
+   
 }
 
 .mid-content{
@@ -136,6 +136,7 @@ font-family: 'Open Sans', sans-serif;
 
 .contact-us-form{
     grid-column: span 2;  /*abramger outra coluna */
+
 }
 
 .contact-us-form .form-grid{
@@ -150,6 +151,7 @@ font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 2.6rem;
     margin-bottom: 2.5rem;
+
 }
 
 .form-info{
@@ -192,6 +194,8 @@ font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 1.7rem;
     text-align: center;
+    background:var(--cor-primaria);
+    width: 100%;
 }
 
 #main-footer p{
@@ -213,7 +217,28 @@ font-family: 'Open Sans', sans-serif;
     
 }
 
-@media (max-width:800px) {
+.close-menu{
+    display: none;
+}
+
+.back-to-home img{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 35%;
+    content: '↑';
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+ @media (max-width:550px) {
     .intro-content, .grid{
         grid-template-columns: 1fr;
     }
@@ -228,8 +253,63 @@ font-family: 'Open Sans', sans-serif;
         width: 100%;
     }
 
+    .introduction-image img{
+        height: 30vh;
+       
+    }
+
     .grid-one-content{
         display: block;
     }
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+        
+    } 
+    
+    .menu{
+        display: none;
+    }
+
+    
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--cor-primaria);
+        color: var(--white);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+
+
+    
 }
+
+
 
