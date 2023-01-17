@@ -238,7 +238,7 @@ font-family: 'Open Sans', sans-serif;
     width: 3.5rem;
 }
 
- @media (max-width:550px) {
+ @media (max-width:650px) {
     .intro-content, .grid{
         grid-template-columns: 1fr;
     }
@@ -307,8 +307,28 @@ font-family: 'Open Sans', sans-serif;
         content: '×';
     }
 
+}
 
-    
+@media (max-width: 390px) {
+    .background-principal{
+        width: 390px;
+    }
+
+    .background-white{
+        width: 390px;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    #main-footer{
+        width: 390px;
+    }
 }
 
 
