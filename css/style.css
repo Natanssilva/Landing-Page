@@ -154,9 +154,19 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
+.form-grid{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding:10px 10px;
+}
+
 .form-info{
     min-width: 320px; /*320px poderia ir no flex, daria no mesmo */
     flex: 1 1;
+    padding: 0 2%;
+    margin-left: -1.8rem;
+    
 }
 
 .form-info label{
@@ -265,6 +275,7 @@ font-family: 'Open Sans', sans-serif;
     .menu{
         bottom: 0;
         text-align: center;
+        
     }
 
     .menu-content{
@@ -309,13 +320,15 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
-@media (max-width: 390px) {
+
+@media (max-width: 400px) {
+
     .background-principal{
-        width: 390px;
+        width: 405px;
     }
 
     .background-white{
-        width: 390px;
+        width: 405px;
     }
 
     h2{
@@ -327,7 +340,7 @@ font-family: 'Open Sans', sans-serif;
     }
 
     #main-footer{
-        width: 390px;
+        width: 405px;
     }
 }
 

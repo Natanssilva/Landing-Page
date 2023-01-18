@@ -24,9 +24,6 @@
     min-height: 100vh;  /*view height */
 }
 
-.menu-space{
-    height: 64px;
-}
 
 body .complete-width{ /* apenas para sobreescrever, especifidade baixa */
     width: 100%;
